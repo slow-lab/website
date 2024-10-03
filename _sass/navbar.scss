@@ -1,0 +1,22 @@
+.navbar {
+    background-color: $light-green;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    border-bottom: solid 3px $dark-green;
+    padding-right: 70px;
+    padding-left:70px;
+
+    img {
+        height: 33px;
+        margin-right: 70px;
+    }
+
+    .menu {
+        color: $dark-green;
+        font-size: 16px;
+    }
+
+    a {text-decoration: none;}
+}

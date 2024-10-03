@@ -1,0 +1,14 @@
+.text-line {
+    background-color: transparent;
+    color: $dark-green;
+    outline: none;
+    outline-style: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid $dark-green 2px;
+    padding: 3px 10px;
+    width: 100%;
+    font-size: 24px;
+    font-family:"Necto Mono";
+}
