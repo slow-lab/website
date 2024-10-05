@@ -1,21 +1,3 @@
-$bodyFont: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-
-* {
-  margin: 0;
-}
-
-body {
-  min-height: 100vh;
-  min-width: 100vw;
-  display: flex;
-  flex-direction: column;
-}
-
-h1 {
-  margin-bottom:20px;
-  font-size: 56px;
-}
-
 // Slow colors
 $dark-green: #002D22;
 $off-white: #F2F2E1;
@@ -33,13 +15,50 @@ $lavander:#E3E7F7;
   src: url("/assets/fonts/NectoMono-Regular.otf"); 
 }
 
+@font-face {
+  font-family: "Noto Serif";
+  // font-style: light !important;
+  font-weight: 300 !important;
+  src: url("/assets/fonts/NotoSerif-ExtraLight.ttf"); 
+}
+
+$bodyFont1: "Noto Serif","Times New Roman";
+$bodyFont2: "Necto Mono", "Courier New";
+
+html {
+  scrollbar-gutter: stable;
+}
+
+* {
+  margin: 0;
+}
 
 body {
+  min-height: 100vh;
+  max-width: 100vw;
+  display: flex;
+  flex-direction: column;
   background: $off-white;
   color: $dark-green;
-  font-family: "Necto Mono";
+  font-family: $bodyFont2;
+}
+
+h1 {
+  margin-bottom:20px;
+  font-size: 48px;
+  font-family: $bodyFont1;
+  line-height: 110%;
+  font-weight: 400;
 }
 
 p {
   line-height: 135%;
+}
+
+.yellow {
+  color: $sunshine;
+}
+
+.green-bg {
+  background-color: $slow-green;
 }

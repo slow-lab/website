@@ -1,8 +1,20 @@
-.button-green {
-    border: 2px solid $dark-green;
+.button {
     border-radius:100px;
     padding:25px 50px;
     width: fit-content;
     margin-top:40px;
     font-size: 18px;
+    max-height: 70px;
+    // font-family: "Noto Serif";
+
+    &.green {
+        border: 3px solid $dark-green;
+        color: $dark-green
+    }
+
+    &.yellow {
+        border: 3px solid $sunshine;
+        color: $sunshine;
+    }
+
 }
