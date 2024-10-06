@@ -23,7 +23,7 @@
         padding: 70px 70px;
         width: 49%;
         flex-direction: column;
-        background-image: url("{{ '/assets/images/slowlab_square3.png' | relative_url }}"); 
+        background-image: url($baseurl +"/assets/images/slowlab_square3.png"); 
         background-position: center;
         background-size:cover;
     }
@@ -60,7 +60,7 @@
     }
 
     &#slogan {
-        background-image: url("{{ '/assets/images/leah_banner.jpg' | relative_url }}");
+        background-image: url('website/assets/images/leah_banner.jpg');
         background-position: center;
         background-size:cover;
     }
