@@ -38,11 +38,13 @@
     border-top: solid 3px $dark-green;
     border-bottom: solid 3px $dark-green;
     margin-left: -20px;
-    text-overflow: clip;
+    text-overflow: clip clip;
   
     h1 {
       margin-bottom:0;
     }
+
+
   }
   
 .section-bg {
@@ -57,6 +59,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
     }
 
     &#slogan {
@@ -67,4 +70,51 @@
 
   }
 
-  
+  .title-banner {
+    background-color: $light-green;
+    padding-left:70px;
+    padding-right:70px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    border-top: solid 3px $dark-green;
+    justify-content: space-between;
+
+    .button {
+        margin-top:0px !important;
+    }
+
+    h1 {
+        margin:0;
+    }
+  }
+
+  .events-banner {
+    border-top: solid 3px $dark-green;
+
+
+    .left {
+        width: 30%;
+        height: 500px;
+        padding: 70px 70px;
+        display: flex;
+        flex-direction: column;
+        // justify-content: space-between;
+    }
+    .right {
+        padding: 70px 70px;
+        width: 49%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .right-img {
+        padding: 70px 70px;
+        width: 49%;
+        flex-direction: column;
+        background-image: url("/website/assets/images/slowlab_square3.png"); 
+        background-position: center;
+        background-size:cover;
+    }
+  }

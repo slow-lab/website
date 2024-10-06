@@ -14,14 +14,14 @@ $lavander:#E3E7F7;
   font-family: "Necto Mono";
   font-style: normal;
   font-weight: 400;
-  src: url(website/assets/fonts/NectoMono-Regular.otf); 
+  src: url(/website/assets/fonts/NectoMono-Regular.otf); 
 }
 
 @font-face {
   font-family: "Noto Serif";
   // font-style: light !important;
   font-weight: 300 !important;
-  src: url(website/assets/fonts/NotoSerif-ExtraLight.ttf); 
+  src: url(/website/assets/fonts/NotoSerif-ExtraLight.ttf); 
 }
 
 $bodyFont1: "Noto Serif","Times New Roman";
@@ -51,6 +51,14 @@ h1 {
   font-family: $bodyFont1;
   line-height: 110%;
   font-weight: 400;
+}
+
+h3 {
+  font-size:24px;
+  font-family: $bodyFont2;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin-bottom:40px;
 }
 
 p {
