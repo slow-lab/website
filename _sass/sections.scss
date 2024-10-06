@@ -24,9 +24,45 @@
         width: 49%;
         flex-direction: column;
         background-image: url(/assets/images/slowlab_square3.png);
-        background-position: center top;
-        background-size: auto 100%;
+        background-position: center;
+        background-size:cover;
     }
 
 }
 
+.section-banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    border-top: solid 3px $dark-green;
+    border-bottom: solid 3px $dark-green;
+    margin-left: -20px;
+    text-overflow: clip;
+  
+    h1 {
+      margin-bottom:0;
+    }
+  }
+  
+.section-bg {
+
+    .slogan-frame {
+        background-color: $sunshine;
+        border-radius: 20px;
+        margin: 70px;
+        padding: 80px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &#slogan {
+        background-image: url(/assets/images/leah_banner.jpg);
+        background-position: center;
+        background-size:cover;
+    }
+
+  }

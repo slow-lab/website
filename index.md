@@ -12,8 +12,8 @@ title: "slow home"
       </h1>
     </span>
 
-  <div class="button yellow">
-        DESCUBRIR MAS
+    <div class="button yellow">
+        descubrir más
     </div>
   </div>
  
@@ -21,5 +21,25 @@ title: "slow home"
   
         <!-- <img class="" src="assets/images/slowlab.png"> -->
  </div>
+
+</div>
+
+<div class="section-banner lily-bg">
+    <span><h1>Acerca de</h1></span>
+    <span><h1>Acerca de</h1></span>
+    <span><h1>Acerca de</h1></span>
+    <span><h1>Acerca de</h1></span>
+    <span><h1>Acerca de</h1></span>
+</div>
+
+
+<div class="section-bg" id="slogan">
+    <div class="slogan-frame">
+        <img src="/assets/images/iconos/Slowlab_Iconos_Ave_3_small.png">
+        <h1>En la intersección entre el slow movement y low tech, somos un colectivo de diseñadores, makers y arquitectos que busca crear conciencia y promover modos de vida resilientes.</h1>
+        <div class="button green">
+          descubrir más
+        </div>
+    </div>
 
 </div>
