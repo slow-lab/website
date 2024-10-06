@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "slow home"
+title: "Slow lab"
 ---
 
 
