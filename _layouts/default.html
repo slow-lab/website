@@ -9,8 +9,9 @@
     <link rel="shortcut icon" type="image/x-icon" href="{{'/assets/images/icons/favicon.ico' | relative_url }}" />
   </head>
   <body>
-      {% include navigation.html %}
-      {{ content }}
+    <script src="{{'/assets/js/slideshow.js' | relative_url }}"></script>
+    {% include navigation.html %}
+    {{ content }}
   </body>
   <footer> 
     {% include footer.html %}

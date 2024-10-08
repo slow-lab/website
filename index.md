@@ -39,16 +39,32 @@ title: "Slow lab"
 
 
 <!-- Eventos que amamos recordar -->
-<div class="events-banner lily-bg">
-   <div class="left">
-    <h1>Eventos que amamos recordar</h1>
-        {% for post in site.posts %}
-        <h3> {{ post.title }} </h3>
-        <p>{{post.content}}</p>
-        {% endfor %}
+<div class="carousel-projects lily-bg">
+    <div class="left">
+        <h1>Eventos que amamos recordar</h1>
+        <span>
+           <span class="proj-text" style="display:block"><h3>{{ site.posts.first.title }}</h3><p>{{site.posts.first.content}}</p></span>
+           <span class="proj-text" style="display:none"><h3>{{ site.posts.last.title }}</h3><p>{{site.posts.last.content}}</p></span>
+            <span class="proj-text" style="display:none"><h3>{{ site.posts.first.title }}</h3><p>{{site.posts.first.content}}</p></span>
+        </span>
     </div>
-
+    <div class="right-img">
+      <img class="mySlides" src="{{ site.posts.first.image | relative_url }}" alt="test" style="display:block">
+      <img class="mySlides" src="{{ site.posts.last.image | relative_url }}" alt="test" style="display:none">
+      <img class="mySlides" src="{{ site.posts.first.image | relative_url }}" alt="test" style="display:none">
+      <div class="nav-slides">
+        <img src="{{'/assets/images/icons/arrowleft.png' | relative_url }}" alt="&#8592;" class="" onclick="plusDivs(-1)">
+        <span class="nav-numbers">
+        <span class="nb-slide selected" onclick="currentDiv(1)">1</span>
+        <span class="nb-slide" onclick="currentDiv(2)">2</span>
+        <span class="nb-slide" onclick="currentDiv(3)">3</span>
+        </span>
+        <img src="{{'/assets/images/icons/arrowright.png' | relative_url }}" alt="&#8592;" class="" onclick="plusDivs(+1)">        
+      </div>
+    </div>
 </div>
+
+
 
 
 <!-- Title banner -->

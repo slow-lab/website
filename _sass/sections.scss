@@ -118,3 +118,40 @@
         background-size:cover;
     }
   }
+
+.carousel-projects {
+    border-top: solid 3px $dark-green;
+    padding: 0px 70px 70px 70px;
+    display: flex;
+
+  .left {
+        width: 50%;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding:120px 120px 120px 0px;
+
+        h1 {
+            margin-bottom:80px;
+        }
+  }
+
+  .right-img {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 70px 0px 0px 0px;
+
+    img {
+        &.mySlides  {
+            object-fit: cover;
+            max-height: 594px;
+            max-width: 594px;
+            border-radius:20px;
+            margin-bottom: 40px;
+        }
+    }
+}
+}
