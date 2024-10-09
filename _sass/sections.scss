@@ -1,9 +1,10 @@
+// Two columns desktop
 .two-columns {
     display: flex;
     height:auto;
     max-width:100vw;
 
-    .left {
+    .col-text {
         border-right: solid 3px $dark-green;
         width: 49%;
         padding: 70px 70px;
@@ -11,15 +12,7 @@
         flex-direction: column;
         justify-content: space-between;
     }
-    .right {
-        padding: 70px 70px;
-        width: 49%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-
-    .right-img {
+    .col-img {
         padding: 70px 70px;
         width: 49%;
         flex-direction: column;
@@ -27,9 +20,34 @@
         background-position: center;
         background-size:cover;
     }
-
 }
 
+// Two columns mobile
+@media screen and (max-width: 780px) {
+    .two-columns {
+        flex-direction: column-reverse;
+
+        .col-text {
+            border-right: none !important;
+            border-top: solid 3px $dark-green;
+            width:auto;
+            padding: 50px 24px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .col-img {
+            width: auto;
+            height:220px;
+            background-image: url("/website/assets/images/slowlab_square3.png"); 
+            background-position: center;
+            background-repeat: no-repeat; /* Prevent the image from repeating */
+            background-size:cover;
+        }
+    }
+}
+
+// Banner titre section desktop
 .section-banner {
     display: flex;
     justify-content: space-between;
@@ -43,12 +61,21 @@
     h1 {
       margin-bottom:0;
     }
-
-
   }
-  
-.section-bg {
 
+// Banner titre section mobile
+@media screen and (max-width: 780px) {
+    .banner-item:not(:nth-child(1)) {display: none;}
+
+    .section-banner {
+        margin:auto;
+        width:100%;
+        justify-content: center;
+    }
+}
+
+// Slogan & background desktop
+.section-bg {
     .slogan-frame {
         background-color: $sunshine;
         border-radius: 20px;
@@ -59,7 +86,6 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-
     }
 
     &#slogan {
@@ -67,10 +93,30 @@
         background-position: center;
         background-size:cover;
     }
-
   }
 
-  .title-banner {
+// Slogan & background mobile
+@media screen and (max-width: 780px) {
+    .section-bg {
+        .slogan-frame {
+            border-radius: 0px;
+            padding: 50px;
+            margin: 0px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        &#slogan {
+            // padding: 50px 24px;
+            background-image:none;
+        }
+  }
+}
+
+// Banner section & button desktop
+.title-banner {
     background-color: $light-green;
     padding-left:70px;
     padding-right:70px;
@@ -80,18 +126,22 @@
     border-top: solid 3px $dark-green;
     justify-content: space-between;
 
-    .button {
-        margin-top:0px !important;
-    }
-
-    h1 {
-        margin:0;
-    }
+    .button {margin-top:0px !important;}
+    h1 {margin:0;}
   }
 
-  .events-banner {
-    border-top: solid 3px $dark-green;
+// Banner section & button mobile
+@media screen and (max-width: 780px) {
+    .title-banner {
+      flex-direction: column;
+      padding: 24px 24px;
+      min-height: 150px;
+    }
+}
 
+// Events slider desktop
+.events-banner {
+    border-top: solid 3px $dark-green;
 
     .left {
         width: 30%;
@@ -99,7 +149,6 @@
         padding: 70px 70px;
         display: flex;
         flex-direction: column;
-        // justify-content: space-between;
     }
     .right {
         padding: 70px 70px;
@@ -154,4 +203,50 @@
         }
     }
 }
+}
+
+@media screen and (max-width: 780px) {
+    .carousel-projects {
+        flex-direction:column;
+        padding: 50px 70px 70px 70px;
+
+        .left {
+            width: 100%;
+            height: auto;
+            padding:0px;
+    
+            h1 {
+                margin-bottom:24px;
+            }
+
+            h3 {
+                margin-bottom:20px;
+            }
+
+            p {
+                margin-bottom: 20px;
+            }
+      }
+
+    
+      .right-img {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0px 0px 0px 0px;
+    
+        img {
+            &.mySlides  {
+                object-fit: cover;
+                max-height: 284px;
+                max-width: auto;
+                border-radius:20px;
+                margin-bottom: 40px;
+            }
+        }
+    }
+
+    }
+
 }

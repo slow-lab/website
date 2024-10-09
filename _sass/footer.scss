@@ -2,16 +2,13 @@ footer {
     margin-top: auto;
     a {text-decoration: none;}
 
-
     .top-footer {
-        background-color: $light-green;
         height: 558px;
         border-top: solid 3px $dark-green;
         font-size: 18px;
     }
 
     .bottom-footer {
-        background-color: $slow-green;
         height: 384px;
         border-top: solid 3px $dark-green;
         display: flex;
@@ -45,3 +42,18 @@ footer {
         justify-content: center;
     }
   }
+
+@media screen and (max-width: 780px) {
+    footer {
+        .top-footer {
+            height: auto;
+            border-top: none;
+            font-size: 18px;
+        }
+        .bottom-footer {
+         flex-direction:column-reverse;
+         justify-content: flex-start;
+         padding-left: 50px 24px;
+        }
+    }
+}

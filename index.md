@@ -1,20 +1,18 @@
 ---
 layout: default
-title: "Slow lab"
+title: "Slow Lab"
 ---
 
 <div class="two-columns">
-  <div class="left green-bg">
-    <span>
+  <div class="col-text green-bg">
       <h1 class="yellow">
-        Cuestionamos y rediseñamos las herramientas que utilizamos en nuestra vida cotidiana para depender menos de la alta tecnología.
+        Cuestionamos y rediseñamos las herramientas que utilizamos en nuestra vida cotidiana 
+        para depender menos de la alta tecnología.
       </h1>
-    </span>
     <div class="button yellow">descubrir más</div>
   </div>
  
-  <div class="right-img">
- </div>
+  <div class="col-img"></div>
 </div>
 
 <!-- Section banner -->

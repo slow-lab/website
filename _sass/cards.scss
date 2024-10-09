@@ -1,0 +1,8 @@
+.cards {
+    display:grid;
+    grid-gap:0px;
+
+    .home {
+        grid-template-columns: 1fr 1fr;
+    }
+}
