@@ -11,14 +11,23 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+
+     
+        p {
+            padding-right:30px;
+            padding-top:30px;
+            font-weight: 200px;
+        }
     }
     .col-img {
         padding: 70px 70px;
         width: 49%;
         flex-direction: column;
-        background-image: url("/website/assets/images/slowlab_square3.png"); 
         background-position: center;
         background-size:cover;
+
+        &.home {background-image: url("/website/assets/images/slowlab_square3.png");}
+        &.projects {background-image: url("/website/assets/images/projects/espai-consum/espaiconsum_slowlab.jpg");}
     }
 }
 
@@ -50,17 +59,22 @@
 // Banner titre section desktop
 .section-banner {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     height: 70px;
     border-top: solid 3px $dark-green;
     border-bottom: solid 3px $dark-green;
-    margin-left: -20px;
-    text-overflow: clip clip;
+    margin-left: -40px;
+    text-overflow: clip;
+    overflow:hidden;
+    white-space: nowrap;
+
   
     h1 {
       margin-bottom:0;
+      margin-right:80px;
     }
+
+
   }
 
 // Banner titre section mobile
@@ -71,6 +85,10 @@
         margin:auto;
         width:100%;
         justify-content: center;
+
+        h1{
+            margin-right:0px;
+        }
     }
 }
 

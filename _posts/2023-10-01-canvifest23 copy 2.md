@@ -1,10 +1,10 @@
 ---
 layout: "default"
-title: Cocinar con energía solar y humana
-date:   2024-10-01 18:16:18 +0200
-tags: ["low tech", "solar cooking"]
+title: CanviFest
+date:   2023-10-01 18:16:18 +0200
+tags: ["low tech"]
 image: "/assets/images/projects/canvifest24/biciblender_canvifest_slowlab.png"
-short-description: "Construir una cocina de verano low-tech para imaginar y experimentar un futuro sin combustibles fósiles."
+short-description: "Un evento social para promover el uso de la energía solar de una manera divertida: cocinar con el sol y música alimentada con el sol."
 location: "Barcelona"
 published: true
 ---

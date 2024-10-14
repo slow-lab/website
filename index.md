@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Slow Lab"
+title: "SlowLab"
 ---
 
 <div class="two-columns">
@@ -12,12 +12,14 @@ title: "Slow Lab"
     <div class="button yellow">descubrir más</div>
   </div>
  
-  <div class="col-img"></div>
+  <div class="col-img home"></div>
 </div>
 
 <!-- Section banner -->
-
 <div class="section-banner lily-bg">
+    <span class="banner-item"><h1>Acerca de</h1></span>
+    <span class="banner-item"><h1>Acerca de</h1></span>
+    <span class="banner-item"><h1>Acerca de</h1></span>
     <span class="banner-item"><h1>Acerca de</h1></span>
     <span class="banner-item"><h1>Acerca de</h1></span>
     <span class="banner-item"><h1>Acerca de</h1></span>
@@ -26,7 +28,6 @@ title: "Slow Lab"
 </div>
 
 <!-- Slogan -->
-
 <div class="section-bg" id="slogan">
     <div class="slogan-frame">
         <img src="{{ '/assets/images/icons/Slowlab_Iconos_Ave_3_small.png' | relative_url }}" alt="Slow lab">
@@ -66,8 +67,7 @@ title: "Slow Lab"
 
 
 <!-- Title banner -->
-
 <div class="title-banner">
     <span><h1>Proyectos</h1></span>
-    <div class="button green">descubrir más</div>
+    <a href="{{ site.baseurl }}/projects" class="button green">descubrir más</a>
 </div>

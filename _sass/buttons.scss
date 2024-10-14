@@ -21,6 +21,11 @@
 
 }
 
+a.button {
+    text-decoration: none;
+}
+
+
 @media screen and (max-width: 780px) {
     .button {
         &.green {
