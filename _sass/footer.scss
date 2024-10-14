@@ -9,10 +9,10 @@ footer {
     }
 
     .bottom-footer {
-        height: 384px;
+        height: 350px;
         border-top: solid 3px $dark-green;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
         padding-left: 70px;
         padding-right:70px;
@@ -29,6 +29,8 @@ footer {
         text-transform: uppercase;
         list-style-type: none;
         padding-bottom:20px;
+        text-decoration: underline $sunshine;
+        text-underline-offset: 0.2rem;
     }
 
     a {
@@ -37,9 +39,21 @@ footer {
     }
 
     .side {
-        width: 25%;
-        display: flex;
-        justify-content: center;
+      width: 25%;
+      display: flex;
+      justify-content: center;
+
+    }
+
+    #desktop {
+        position: absolute; /* Take it out of the normal flow */
+        left: 50%;
+        transform: translateX(-50%); /* Center it */
+    }
+
+    #mobile {
+        left: 0%;
+        display: none;
     }
   }
 
@@ -49,11 +63,41 @@ footer {
             height: auto;
             border-top: none;
             font-size: 18px;
+
+            h1 {
+                text-align:left;
+                margin-bottom:40px;
+            }
+
+            p {
+                margin-bottom:20px;
+            }
         }
         .bottom-footer {
-         flex-direction:column-reverse;
+         flex-direction:column;
          justify-content: flex-start;
-         padding-left: 50px 24px;
+         padding-left: 24px;
+         padding-right: 24px;
+         padding-top:50px;
+         padding-bottom:50px;
+         height: auto;
+
+         .side {
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        #desktop {
+            display: none;
+        }
+
+        #mobile {
+            display: block;
+            margin-top: 30px;
+            align-self: flex-start;
+        }
         }
     }
 }

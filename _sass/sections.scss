@@ -168,6 +168,7 @@
     }
   }
 
+  // Carousel desktop
 .carousel-projects {
     border-top: solid 3px $dark-green;
     padding: 0px 70px 70px 70px;
@@ -205,10 +206,11 @@
 }
 }
 
+// Carousel mobile
 @media screen and (max-width: 780px) {
     .carousel-projects {
         flex-direction:column;
-        padding: 50px 70px 70px 70px;
+        padding: 50px 24px 24px 24px;
 
         .left {
             width: 100%;
@@ -216,7 +218,7 @@
             padding:0px;
     
             h1 {
-                margin-bottom:24px;
+                margin-bottom:40px;
             }
 
             h3 {
