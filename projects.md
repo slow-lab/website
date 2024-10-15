@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "SlowLab projects"
+title: "SlowLab Projects"
 ---
 
 <div class="two-columns">
@@ -13,7 +13,7 @@ title: "SlowLab projects"
     <br><br>Buscando generar consciencia y detonar conversaciones que nos ayuden a imaginar un futuro mas amigable con el medio ambiente.
     </p>
     </div>
- 
+
   <div class="col-img projects">
   </div>
 </div>
@@ -29,25 +29,7 @@ title: "SlowLab projects"
 
 <!-- Projects cards -->
 <div class="cards projects">
-
 {% for post in site.posts %}
-      <div class="card-project">
-        <a href="{{ post.url | relative_url }}">
-            <div class="title">
-            <h3>{{ post.title }}</h3>
-            <img src="{{'/assets/images/icons/arrowright.png' | relative_url }}" alt="&#8592;">
-            </div>
-            <p>
-            <div class="taglist">
-                {% for tag in post.tags %}
-                  <div class="tag">#{{ tag }}</div>
-                {% endfor %}
-            </div>
-            <p class="location">{{post.location}}, {{post.date | date: '%Y'}}</p>
-            <p>{{post.short-description}}</p>
-            </p>
-        </a>
-      </div>
-  {% endfor %}
-
+  {% include projects.html %}
+{% endfor %}
 </div>

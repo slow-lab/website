@@ -4,24 +4,40 @@
     height:auto;
     max-width:100vw;
 
+    .col-text:nth-child(2) {
+        border-right: none;
+    }
+
     .col-text {
         border-right: solid 3px $dark-green;
-        width: 49%;
+        width: 50%;
         padding: 70px 70px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
 
-     
         p {
             padding-right:30px;
             padding-top:30px;
             font-weight: 200px;
         }
+
+        &.small {
+            width: 35%;
+            border-right: none;
+            justify-content: center;
+            h1{margin:0px;}
+        }
+    
+        &.bigger {
+            width: 65%;
+            p {padding-top:0px;}
+        }
     }
+
     .col-img {
         padding: 70px 70px;
-        width: 49%;
+        width: 50%;
         flex-direction: column;
         background-position: center;
         background-size:cover;
@@ -36,6 +52,8 @@
     .two-columns {
         flex-direction: column-reverse;
 
+        &.normal {flex-direction: column;}
+
         .col-text {
             border-right: none !important;
             border-top: solid 3px $dark-green;
@@ -43,6 +61,20 @@
             padding: 50px 24px;
             justify-content: center;
             align-items: center;
+
+            &.small {
+                width: auto;
+                border-top: none;
+                padding: 50px 24px;
+                h1 {text-align: left;}
+            }
+            &.bigger {
+                width: auto;
+                padding: 0px 24px 24px 24px;
+                border-top: none;
+                p {padding:0px;}
+
+            }
         }
 
         .col-img {
@@ -142,6 +174,7 @@
     display: flex;
     align-items: center;
     border-top: solid 3px $dark-green;
+    border-bottom: solid 3px $dark-green;
     justify-content: space-between;
 
     .button {margin-top:0px !important;}
@@ -269,4 +302,14 @@
 
     }
 
+}
+
+// Central section
+.central {
+    border-top: solid 3px $dark-green;
+    padding: 50px 70px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    h1 {text-align:center;}
 }

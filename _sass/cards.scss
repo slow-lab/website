@@ -10,11 +10,25 @@
 
     &.home {
         grid-template-columns: 1fr 1fr;
-    }
+        }
 
     &.projects {
         grid-template-columns: 1fr 1fr 1fr;
     }
+
+    &.team {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.card-team {
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    align-items:start;
+    margin:0px;
+    padding:50px 30px;
+    background-color: $sunshine;
 }
 
 .card-project {
@@ -68,13 +82,9 @@
 
 @media screen and (max-width: 780px) {
     .cards {
-        &.home {
-            grid-template-columns: 1fr;
-        }
-    
-        &.projects {
-            grid-template-columns: 1fr;
-        }
+        &.home {grid-template-columns: 1fr;}
+        &.projects {grid-template-columns: 1fr;}
+        &.team {grid-template-columns: 1fr;}
     }
 
     .card-project {

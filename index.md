@@ -9,7 +9,7 @@ title: "SlowLab"
         Cuestionamos y rediseñamos las herramientas que utilizamos en nuestra vida cotidiana 
         para depender menos de la alta tecnología.
       </h1>
-    <div class="button yellow">descubrir más</div>
+    <a href="{{ site.baseurl }}/about" class="button yellow">descubrir más</a>
   </div>
  
   <div class="col-img home"></div>
@@ -32,7 +32,7 @@ title: "SlowLab"
     <div class="slogan-frame">
         <img src="{{ '/assets/images/icons/Slowlab_Iconos_Ave_3_small.png' | relative_url }}" alt="Slow lab">
         <h1>En la intersección entre el slow movement y low tech, somos un colectivo de diseñadores, makers y arquitectos que busca crear conciencia y promover modos de vida resilientes.</h1>
-        <div class="button green">descubrir más</div>
+    <a href="{{ site.baseurl }}/about" class="button green">descubrir más</a>
     </div>
 </div>
 
@@ -70,4 +70,10 @@ title: "SlowLab"
 <div class="title-banner">
     <span><h1>Proyectos</h1></span>
     <a href="{{ site.baseurl }}/projects" class="button green">descubrir más</a>
+</div>
+
+<div class="cards home">
+{% for post in site.posts limit:2 %}
+  {% include projects.html %}
+{% endfor %}
 </div>
