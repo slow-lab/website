@@ -7,7 +7,8 @@
     border-bottom: solid 3px $dark-green;
     padding-right: 70px;
     padding-left:70px;
-    overflow:visible;
+    // overflow: hidden;
+
 
 
     img {
@@ -21,18 +22,15 @@
 
     a {
       text-decoration: none;
-      background-color: $light-green;
     }
 
     .icon {
         display: none;
+        color: $dark-green;
+        font-size: 24px;
       }
 }
 
-.icon {
-    color: $dark-green;
-    font-size: 24px;
-}
 
 @media screen and (max-width: 780px) {
     .navbar a:not(:nth-child(2)) {display: none;}
@@ -50,30 +48,37 @@
       max-height: 70px;
     }
 
-  #logo {
-    position: absolute; /* Take it out of the normal flow */
-    left: 50%;
-    top: 20px;
-    transform: translateX(-50%); /* Center it */
-    align-self: center;
-  }
-
+    #logo {
+      position: absolute; /* Take it out of the normal flow */
+      left: 50%;
+      top: 20px;
+      transform: translateX(-50%); /* Center it */
+      align-self: center;
+    }
 }
 
   /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. 
   This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
   @media screen and (max-width: 780px) {
-    .navbar.responsive {position: relative;}
-    .navbar.responsive a.icon {
+    .navbar.responsive {
+      position: relative;
+      padding-top: 0px;
     }
-    .navbar.responsive a:not(:nth-child(1)) {
+
+    .navbar.responsive a:nth-child(3) {
+      border-top: solid 3px $dark-green;
+      margin-top: 70px;
+
+    }    
+    .navbar.responsive a.menu {
         display: flex;
         justify-content: center;
         width:100vw;
         height:50px;
         border-bottom: solid 2px $dark-green;
+        background-color: $light-green;
 
-        .menu {
+        &.menu {
           display:flex;
           align-items: center;
         }
