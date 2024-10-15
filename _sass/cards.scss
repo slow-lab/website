@@ -17,19 +17,6 @@
     }
 }
 
-@media screen and (max-width: 780px) {
-    .cards {
-        &.home {
-            grid-template-columns: 1fr;
-        }
-    
-        &.projects {
-            grid-template-columns: 1fr;
-        }
-    }
-}
-
-
 .card-project {
     display: flex;
     height: 400px;
@@ -77,3 +64,21 @@
     padding: 0px 0px 20px 0px;
     margin-right:10px;
   }
+
+
+@media screen and (max-width: 780px) {
+    .cards {
+        &.home {
+            grid-template-columns: 1fr;
+        }
+    
+        &.projects {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .card-project {
+        height: auto;
+        padding:50px 24px;
+    }
+}
