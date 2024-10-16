@@ -1,6 +1,7 @@
 ---
 layout: default
-title: "SlowLab Equipo"
+title: "SlowLab Team"
+label: "El equipo"
 ---
 
 <div class="two-columns normal">
@@ -21,16 +22,7 @@ title: "SlowLab Equipo"
 </div>
 
 <!-- Section banner -->
-<div class="section-banner lily-bg">
-    <span class="banner-item"><h1>El equipo</h1></span>
-    <span class="banner-item"><h1>El equipo</h1></span>
-    <span class="banner-item"><h1>El equipo</h1></span>
-    <span class="banner-item"><h1>El equipo</h1></span>
-    <span class="banner-item"><h1>El equipo</h1></span>
-    <span class="banner-item"><h1>El equipo</h1></span>
-    <span class="banner-item"><h1>El equipo</h1></span>
-
-</div>
+{% include banner.html %}
 
 <!-- Team -->
 <div class="cards team">
@@ -46,35 +38,30 @@ title: "SlowLab Equipo"
 {% endfor %}
 </div>
 
-
-<!-- <div class="cards team">
-    <div class="card-team">
-        <h1>Paula Bustos</h1>
-        <h3>Cofundadora, México</h3>
-        <p>Es una diseñadora industrial con un enfoque en la reconexión con la naturaleza a través del diseño y experiencias. Explora la regeneración del ecosistema a través de la innovación y el cambio de hábitos y con un especial interés en el turismo regenerativo.
-        </p>
-    </div>
-    <div class="card-team">
-        <h1>Audrey Belliot</h1>
-        <h3>Cofundadora, Barcelona</h3>
-        <p>Es una diseñadora y maker. Explora formas alternativas de vivir a un ritmo más slow y respetuoso del medio ambiente. Investiga el tema de la cocina del futuro, especialmente las formas de preparar y conservar los alimentos utilizando la energía del sol.
-        </p>
-    </div>
-    <div class="card-team">
-        <h1>Gerda Meleschkin</h1>
-        <h3>Cofundadora, Köln</h3>
-        <p>Es una diseñadora gráfica y de producto. Siempre está buscando nuevas maneras de vivir de manera consciente y sostenible con el medio ambiente. Conecta con la naturaleza en sus procesos y sigue la metodología slow en el día a día.
-        </p>
-    </div>
-</div> -->
-
-
 <!-- Cities -->
 <div class="central lily-bg">
-<h1>¿Dónde estamos ubicadas?</h1>
+    <h1 class="title">¿Dónde estamos ubicadas?</h1>
+    <div class="row">
+        <div>
+            <img src="{{'/assets/images/team/akasha-hub.jpg' | relative_url }}" class="round">
+            <h1>Barcelona</h1>
+            <h3>Akasha Hub</h3>
+        </div>
+        <div>
+            <img src="{{'/assets/images/team/comite.jfif' | relative_url }}" class="round">
+            <h1>México</h1>
+            <h3>Comité</h3>
+        </div>
+    </div>
 </div>
 
-
+<!-- Collab -->
 <div class="central white-bg green">
 <h1>La colaboración es la llave de todo lo que hacemos</h1>
+<p>Siempre nos gusta colaborar y escuchar nuevas ideas.
+Déjanos un mensaje y te responderemos slowly!</p>
+
+
+
+
 </div>

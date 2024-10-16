@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "SlowLab Projects"
+label: "Nuestras iniciativas"
 ---
 
 <div class="two-columns">
@@ -19,13 +20,7 @@ title: "SlowLab Projects"
 </div>
 
 <!-- Section banner -->
-<div class="section-banner lily-bg">
-    <span class="banner-item"><h1>Nuestras iniciativas</h1></span>
-    <span class="banner-item"><h1>Nuestras iniciativas</h1></span>
-    <span class="banner-item"><h1>Nuestras iniciativas</h1></span>
-    <span class="banner-item"><h1>Nuestras iniciativas</h1></span>
-    <span class="banner-item"><h1>Nuestras iniciativas</h1></span>
-</div>
+{% include banner.html %}
 
 <!-- Projects cards -->
 <div class="cards projects">

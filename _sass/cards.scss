@@ -7,18 +7,9 @@
         color: inherit;
     }
 
-
-    &.home {
-        grid-template-columns: 1fr 1fr;
-        }
-
-    &.projects {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-
-    &.team {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
+    &.home {grid-template-columns: 1fr 1fr;}
+    &.projects {grid-template-columns: 1fr 1fr 1fr;}
+    &.team {grid-template-columns: 1fr 1fr 1fr;}
 }
 
 .card-team {
@@ -29,6 +20,7 @@
         object-fit:cover;
         width: 100%;
         min-height: 100%;
+        filter: grayscale(100%);
     }
 
     .content {
@@ -64,16 +56,13 @@
         align-items: center;
         padding-bottom:40px;
 
-        h3 {
-            margin:0px;
-        }
+        h3 {margin:0px;}
     }
 
     .location {
         text-transform: uppercase;
         padding: 0px 0px 20px 0px;
     }
-    
 }
 
 .card-project:nth-child(-n + 3) {
@@ -110,5 +99,17 @@
     .card-project {
         height: auto;
         padding:50px 24px;
+    }
+
+    .card-team {
+        display:flex;
+        flex-direction: column;
+        height: auto;
+
+        .avatar {
+            height:300px;
+            object-fit:cover ;
+            object-position: center;
+        }
     }
 }

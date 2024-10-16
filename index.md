@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "SlowLab"
+label: "Acerca de"
 ---
 
 <div class="two-columns">
@@ -16,16 +17,7 @@ title: "SlowLab"
 </div>
 
 <!-- Section banner -->
-<div class="section-banner lily-bg">
-    <span class="banner-item"><h1>Acerca de</h1></span>
-    <span class="banner-item"><h1>Acerca de</h1></span>
-    <span class="banner-item"><h1>Acerca de</h1></span>
-    <span class="banner-item"><h1>Acerca de</h1></span>
-    <span class="banner-item"><h1>Acerca de</h1></span>
-    <span class="banner-item"><h1>Acerca de</h1></span>
-    <span class="banner-item"><h1>Acerca de</h1></span>
-    <span class="banner-item"><h1>Acerca de</h1></span>
-</div>
+{% include banner.html %}
 
 <!-- Slogan -->
 <div class="section-bg" id="slogan">
