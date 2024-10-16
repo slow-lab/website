@@ -22,13 +22,33 @@
 }
 
 .card-team {
-    display: flex;
-    flex-direction: column;
-    height: 400px;
-    align-items:start;
+    height: 500px;
     margin:0px;
-    padding:50px 30px;
-    background-color: $sunshine;
+
+    .avatar {
+        object-fit:cover;
+        width: 100%;
+        min-height: 100%;
+    }
+
+    .content {
+        display:none;
+        flex-direction: column;
+        padding:50px 30px;
+        align-items:start;  
+        background-color: $sunshine;
+        min-height: 100%;
+    }  
+}
+
+.card-team:hover {
+    .avatar {
+        display:none;
+    }
+
+    .content {
+        display:flex;
+    }
 }
 
 .card-project {

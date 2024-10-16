@@ -27,10 +27,27 @@ title: "SlowLab Equipo"
     <span class="banner-item"><h1>El equipo</h1></span>
     <span class="banner-item"><h1>El equipo</h1></span>
     <span class="banner-item"><h1>El equipo</h1></span>
+    <span class="banner-item"><h1>El equipo</h1></span>
+    <span class="banner-item"><h1>El equipo</h1></span>
+
 </div>
 
 <!-- Team -->
 <div class="cards team">
+{% for member in site.members %}
+<div class="card-team">
+    <img class="avatar" src='{{ member.photo | relative_url}}'>
+    <div class="content">
+        <h1>{{ member.name }}</h1>
+        <h3>{{ member.position }}, {{ member.location }}</h3>
+        <p>{{ member.content | markdownify }}</p>
+    </div>
+</div>
+{% endfor %}
+</div>
+
+
+<!-- <div class="cards team">
     <div class="card-team">
         <h1>Paula Bustos</h1>
         <h3>Cofundadora, México</h3>
@@ -49,7 +66,7 @@ title: "SlowLab Equipo"
         <p>Es una diseñadora gráfica y de producto. Siempre está buscando nuevas maneras de vivir de manera consciente y sostenible con el medio ambiente. Conecta con la naturaleza en sus procesos y sigue la metodología slow en el día a día.
         </p>
     </div>
-</div>
+</div> -->
 
 
 <!-- Cities -->
