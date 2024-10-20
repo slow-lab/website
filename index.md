@@ -13,7 +13,7 @@ label: "Acerca de"
     <a href="{{ site.baseurl }}/about" class="button yellow">descubrir más</a>
   </div>
  
-  <div class="col-img home"></div>
+  <div class="col-img home outline"></div>
 </div>
 
 <!-- Section banner -->
