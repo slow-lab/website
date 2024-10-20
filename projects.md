@@ -5,7 +5,7 @@ label: "Nuestras iniciativas"
 ---
 
 <div class="two-columns">
-  <div class="col-text green-bg">
+  <div class="col-text green-bg outline">
       <h1 class="yellow">
         Proyectos
       </h1>

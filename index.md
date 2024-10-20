@@ -5,7 +5,7 @@ label: "Acerca de"
 ---
 
 <div class="two-columns">
-  <div class="col-text green-bg">
+  <div class="col-text green-bg outline">
       <h1 class="yellow">
         Cuestionamos y rediseñamos las herramientas que utilizamos en nuestra vida cotidiana 
         para depender menos de la alta tecnología.
@@ -30,13 +30,13 @@ label: "Acerca de"
 
 
 <!-- Eventos que amamos recordar -->
-<div class="carousel-projects lily-bg">
+<div class="carousel-projects outline lily-bg">
     <div class="left">
         <h1>Eventos que amamos recordar</h1>
         <span>
-           <span class="proj-text" style="display:block"><h3>{{ site.posts.first.title }}</h3><p>{{site.posts.first.content}}</p></span>
-           <span class="proj-text" style="display:none"><h3>{{ site.posts.last.title }}</h3><p>{{site.posts.last.content}}</p></span>
-            <span class="proj-text" style="display:none"><h3>{{ site.posts.first.title }}</h3><p>{{site.posts.first.content}}</p></span>
+           <span class="proj-text" style="display:block"><h3>{{ site.posts.first.title }}</h3><p>{{site.posts.first.short-description}}</p></span>
+           <span class="proj-text" style="display:none"><h3>{{ site.posts.last.title }}</h3><p>{{site.posts.last.short-description}}</p></span>
+            <span class="proj-text" style="display:none"><h3>{{ site.posts.first.title }}</h3><p>{{site.posts.first.short-description}}</p></span>
         </span>
     </div>
     <div class="right-img">

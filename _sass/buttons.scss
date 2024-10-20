@@ -39,13 +39,18 @@ a.button {
 }
 
 .btn-contact {
-    // padding:25px 50px;
     width: 100%;
-    color: $dark-green
-
+    color: $dark-green;
+    height: auto;
 }
 
 
 a.btn-contact {
     text-decoration: none;
+}
+
+@media screen and (max-width: 780px) {
+    .btn-contact {
+        padding:20px 24px !important;
+    }
 }

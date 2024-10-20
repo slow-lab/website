@@ -1,5 +1,5 @@
 ---
-layout: "default"
+layout: "post"
 title: Solar Brunch
 date:   2022-10-01 18:16:18 +0200
 tags: ["low tech", "solar cooking"]

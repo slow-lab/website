@@ -26,4 +26,13 @@
     word-break: break-word;
 }
 
-
+@media screen and (max-width: 780px) {
+.field {
+    padding:10px 24px !important;
+    font-family: $bodyFont2;
+    font-size:20px;
+    font-family: $bodyFont2;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 400;}
+}

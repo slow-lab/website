@@ -1,0 +1,19 @@
+---
+layout: default
+---
+
+<div class="two-columns lily-bg">
+    <div class="col-pj-img">
+          <img src="{{ page.image | relative_url }}" alt="test" style="display:block">
+    </div>
+
+
+    <div class="col-text">
+        <a href="{{ site.baseurl }}/projects">PROYECTOS</a>
+        <h1>{{ page.title }}</h1><br>
+        <h3 class="location">{{page.location}}, {{page.date | date: '%Y'}}</h3>
+        <p>{{content}}</p>
+    </div>
+
+
+</div>
