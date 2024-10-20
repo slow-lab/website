@@ -12,3 +12,18 @@
     font-size: 24px;
     font-family:"Necto Mono";
 }
+
+.field {
+    padding:20px 70px;
+    font-family: $bodyFont1;
+    font-size: 48px;
+    width:100vw;
+    background-color: transparent;
+    outline: none;
+    outline-style: none;
+    border-top: none;
+    border-left: none;
+    word-break: break-word;
+}
+
+

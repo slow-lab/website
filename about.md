@@ -26,7 +26,8 @@ label: "El equipo"
 
 <!-- Team -->
 <div class="cards team">
-{% for member in site.members %}
+{% assign founders = site.members | where: "position", "Cofundadora" %}
+{% for member in founders %}
 <div class="card-team">
     <img class="avatar" src='{{ member.photo | relative_url}}'>
     <div class="content">
@@ -60,8 +61,15 @@ label: "El equipo"
 <h1>La colaboración es la llave de todo lo que hacemos</h1>
 <p>Siempre nos gusta colaborar y escuchar nuevas ideas.
 Déjanos un mensaje y te responderemos slowly!</p>
-
-
-
+<div class="row">
+{% assign friends = site.members | where: "position", "Friend" %}
+{% for member in friends %}
+<div class="friend"> 
+<img src="{{ member.photo | relative_url}}" class="square">
+<h3>{{ member.name }}</h3>
+<p>{{member.content}}</p>
+</div>
+{% endfor %}
+</div>
 
 </div>

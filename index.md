@@ -59,7 +59,7 @@ label: "Acerca de"
 
 
 <!-- Title banner -->
-<div class="title-banner">
+<div class="title-banner light-green-bg outline bottom-bd">
     <span><h1>Proyectos</h1></span>
     <a href="{{ site.baseurl }}/projects" class="button green">descubrir más</a>
 </div>

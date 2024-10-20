@@ -4,3 +4,15 @@
     object-fit: cover;
     border-radius: 50%;
 }
+
+.square {
+    height:200px;
+    width:200px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.friend {
+    h3 {margin:10px;}
+    padding-top:30px;
+}

@@ -8,8 +8,19 @@
         border-right: none;
     }
 
+    .one-col {
+        width: 100%;
+        padding: 70px 70px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        &.field {
+            padding:20px 70px;
+        }
+    }
+
     .col-text {
-        border-right: solid 3px $dark-green;
         width: 50%;
         padding: 70px 70px;
         display: flex;
@@ -33,6 +44,10 @@
             width: 65%;
             p {padding-top:0px;}
         }
+
+        &.field {
+            padding:20px 70px;
+        }
     }
 
     .col-img {
@@ -54,9 +69,11 @@
 
         &.normal {flex-direction: column;}
 
+        .one-col {
+            width:auto;
+        }
         .col-text {
             border-right: none !important;
-            border-top: solid 3px $dark-green;
             width:auto;
             padding: 50px 24px;
             justify-content: center;
@@ -64,14 +81,14 @@
 
             &.small {
                 width: auto;
-                border-top: none;
+                // border-top: none;
                 padding: 50px 24px;
                 h1 {text-align: left;}
             }
             &.bigger {
                 width: auto;
                 padding: 0px 24px 24px 24px;
-                border-top: none;
+                // border-top: none;
                 p {padding:0px;}
 
             }
@@ -100,13 +117,10 @@
     overflow:hidden;
     white-space: nowrap;
 
-  
     h1 {
       margin-bottom:0;
       margin-right:80px;
     }
-
-
   }
 
 // Banner titre section mobile
@@ -167,18 +181,16 @@
 
 // Banner section & button desktop
 .title-banner {
-    background-color: $light-green;
     padding-left:70px;
     padding-right:70px;
     height: 120px;
     display: flex;
     align-items: center;
-    border-top: solid 3px $dark-green;
-    border-bottom: solid 3px $dark-green;
+    // border-bottom: solid 3px $dark-green;
     justify-content: space-between;
 
-    .button {margin-top:0px !important;}
     h1 {margin:0;}
+    .button{margin:0}
   }
 
 // Banner section & button mobile
@@ -186,7 +198,7 @@
     .title-banner {
       flex-direction: column;
       padding: 24px 24px;
-      min-height: 150px;
+      height: auto;
     }
 }
 
@@ -309,7 +321,7 @@
     border-top: solid 3px $dark-green;
     padding: 50px 70px;
     text-align: center;
-    h1.title{padding-bottom:40px;}
+    h1.title{padding-bottom:10px;}
 }
 
 .row {
@@ -317,6 +329,7 @@
     justify-content: space-between;
     padding-left:25%;
     padding-right:25%;
+    padding-top:40px;
 }
 
 @media screen and (max-width: 780px) {
@@ -328,7 +341,7 @@
 
     .row {
         display:flex;
-        justify-content: center;
+        justify-content: space-between;
         padding:0;
         flex-direction: column;
 
