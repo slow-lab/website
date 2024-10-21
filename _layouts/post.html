@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<div class="two-columns lily-bg">
+<div class="two-columns lily-bg bottom-bd">
     <div class="col-pj-img">
           <img src="{{ page.image | relative_url }}" alt="test" style="display:block">
     </div>
@@ -17,3 +17,10 @@ layout: default
 
 
 </div>
+
+<!-- Projects cards -->
+<div class="cards projects">
+    {% for post in site.posts %}
+      {% include projects.html %}
+    {% endfor %}
+    </div>
